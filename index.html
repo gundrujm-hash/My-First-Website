@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" href="styles.css">
+     <meta charset="UTF-8"> 
+    <title>Miami University Force Sensitives</title>
+</head>
+
+<body>
+
+    <!-- Main Header -->
+    <header>
+        <h1>Miami University Force Sensitives</h1>
+        <img src="MUFS.png" alt="MUFSLogo">
+        <p><b><i>Miami's Newest Star Wars Club</i></b></p>
+    </header>
+<a href="aboutus.html">About Us</a>
+    <section>
+        <h2><u>Our Activity</u></h2>
+<!-- Activities -->
+        <h3><u>Previous Activities</u></h3>
+        <ul>
+            <li>Droid Making</li>
+            <li>Triviva</li>
+            <li>Lightsaber Choreography</li>
+        </ul>
+
+    
+        <h3><u>Where to Find Us</u></h3>
+        <ol>
+            <li>Weekly Meetings</li>
+            <li>League of Geeks Halloween</li>
+            <li>Geek Con</li>
+        </ol>
+    </section>
+
+function getOption() {
+var obj = document.getElementById("mySelect");
+document.getElementById("demo").innerHTML =
+obj.options[obj.selectedIndex].text;
+}
+</script>
+<form>
+What should we do next?
+<select id="mySelect">
+<option>Create custom lightsabers</option>
+<option>Hold a trivia night</option>
+<option>learn to pilot starcraft</option>
+<option>make Star Wars themed snacks</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit!">
+</form>
+
+
+    <!-- Team (in Rank) -->
+    <section>
+        <h2><u>Our Team</u></h2>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>River</td>
+                <td>President</td>
+            </tr>
+            <tr>
+                <td>Garrison</td>
+                <td>Faculty Advisor</td>
+            </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Vice-President</td>
+            </tr>
+              <tr>
+                <td>Emma</td>
+                <td>Vice-President</td>
+            </tr>
+              <tr>
+                <td>Sage</td>
+                <td>Treasuerer</td>
+            </tr>
+              <tr>
+                <td>Connor</td>
+                <td>Secratary</td>
+            </tr>
+              <tr>
+                <td>Rafi</td>
+                <td>Photographer</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Aside for extra information -->
+    <aside>
+        let myVar = 0;
+        <h2>Fun Fact</h2>
+        <p>We've worked with <b>myVar++;</b> clubs in different team up situations.</p>
+    </aside>
+<a href="learnmore.html">Learn More</a>
+    <!-- Footer section -->
+    <footer>
+        <p>2026 MU Force Sensitives | Created by Jacob Gundrum</p>
+    </footer>
+
+</body>
+</html>

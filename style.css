@@ -1,0 +1,45 @@
+/* Style the entire page background */
+body {
+    background-color: lightgrey; /* Changes the page background to light grey */
+    font-family: Arial, sans-serif; /* Sets a clean readable font */
+    margin: 20px; /* Adds space around the page content */
+}
+
+/* Style all header elements */
+h1, h2, h3 {
+    color: red; /* Makes all headers red */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Makes the table stretch across the page */
+    border-collapse: collapse; /* Removes extra spacing between table borders */
+    margin-top: 20px; /* Adds space above the table */
+}
+
+/* Table borders */
+table, th, td {
+    border: 1px solid black; /* Adds borders to the table and cells */
+}
+
+/* Table header cells */
+th {
+    background-color: red; /* Red background for header cells */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Adds space inside header cells */
+}
+
+/* Table data cells */
+td {
+    padding: 8px; /* Adds space inside data cells */
+}
+
+/* List styling */
+ul, ol {
+    margin-left: 20px; /* Indents lists from the left */
+}
+
+/* List items */
+li {
+    margin-bottom: 5px; /* Adds space between list items */
+}
