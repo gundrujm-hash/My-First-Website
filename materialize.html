@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Materialize CSS Example</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <style>
+       body {
+           background-color: #f0f4f7;
+           font-family: Arial, sans-serif;
+       }
+       .container {
+           margin-top: 20px;
+       }
+       h4 {
+           color: #BD0820;
+       }
+       .card .card-image img {
+           height: 200px;
+           object-fit: cover;
+       }
+   </style>
+</head>
+<nav>
+    <div class="nav-wrapper red">
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="learnmore.html">Learn More</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="materialize.html">Materialize</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+
+
+   <!-- Text and Background -->
+   <div class="container">
+       <h4 class="center-align">Welcome to Miami University Force Sensitives </h4>
+       <p class="flow-text">Miami's on campus Star Wars appreciation student Organization</p>
+   </div>
+
+
+   <!-- Buttons -->
+   <div class="container">
+       <h4>Important Links</h4>
+      <a href="https://miamioh.campuslabs.com/engage/organization/mufs" class="waves-effect waves-light btn red">The HUB</a>
+       <a href="https://starwars.fandom.com/wiki/The_Star_Wars_story_synopsis" class="waves-effect waves-light btn-large red">Star Wars Synopsis</a>
+   </div>
+
+
+   <!-- Cards -->
+   <div class="container">
+       <h4>Our Logo</h4>
+       <div class="card">
+           <div class="card-image">
+               <img src="images/MUFS_Logo.png" alt="MUFS_Logo">
+               <span class="card-title">Mufs Logo</span>
+           </div>
+           <div class="card-content">
+               <p>The official Miami University Force Sensitives Logo</p>
+           </div>
+
+       </div>
+   </div>
+
+
+   <!-- Tables -->
+   <div class="container">
+       <h4>Executive Team</h4>
+       <table class="striped">
+           <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Position</th>
+                   <th>Year</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>River</td>
+                   <td>President</td>
+                   <td>Freshman</td>
+               </tr>
+               <tr>
+                   <td>Jacob</td>
+                   <td>Vice-President</td>
+                   <td>Freshman</td>
+               </tr>
+               <tr>
+                   <td>Sage</td>
+                   <td>Treasurer</td>
+                   <td>Freshman</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
+
+
+   <!-- Shading -->
+   <div class="container">
+       <h4>Meeting Times</h4>
+       <div class="card-panel red lighten-2">
+           <span class="white-text">We meet on Mondays at 7:00 PM, check us out.</span>
+       </div>
+   </div>
+
+
+   <!-- Images -->
+   <div class="container">
+       <h4>Images</h4>
+       <div class="row">
+           <div class="col s12 m6">
+               <img src="images/MUFS words.png" alt="Mufs Words" class="responsive-img materialboxed">
+           </div>
+           <div class="col s12 m6">
+               <img src="images/MUFS_Logo_Bird_Black.png" alt="Mufs Logo Bird Black" class="responsive-img materialboxed">
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.materialboxed');
+           var instances = M.Materialbox.init(elems);
+       });
+   </script>
+</body>
+</html>
