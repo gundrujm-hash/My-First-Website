@@ -128,6 +128,147 @@
            var elems = document.querySelectorAll('.materialboxed');
            var instances = M.Materialbox.init(elems);
        });
+          <!-- Materialize CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
+  <!-- Material Icons (optional, for icons in collapsible headers) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- Omit -->
+
+  <style>
+    body { padding-bottom: 48px; }
+    header { margin-bottom: 24px; }
+    .demo-section { margin-top: 32px; }
+    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
+    .carousel { margin-top: 12px; }
+
+
+    /* Optional: make collapsible content a bit easier to read for students */
+    .collapsible-body p { margin-top: 0; }
+  </style>
+</head>
+
+
+<body>
+  <!-- Simple top nav -->
+  <header>
+    <nav class="red">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">How to Join</a>
+      </div>
+    </nav>
+  </header>
+<div id="radio-section" class="section container">
+       <h2>Select Your Favorite Star Wars Group</h2>
+       <form>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Jedi" onclick="displayGroup()"/>
+                   <span>Jedi</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Sith" onclick="displayGroup()"/>
+                   <span>Sith</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Jedi" onclick="displayGroup()"/>
+                   <span>Republic</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Sepratists" onclick="displayGroup()"/>
+                   <span>Sepratists</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Bounty Hunters" onclick="displayGroup()"/>
+                   <span>Bounty Hunters</span>
+               </label>
+           </p>
+       </form>
+       <div id="group-response"></div>
+   </div>
+ <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+       <h2>Subscribe for Updates</h2>
+       <form onsubmit="submitEmail(event)">
+           <div class="input-field">
+               <input id="email" type="email" required>
+               <label for="email">Email</label>
+           </div>
+           <button type="submit" class="btn waves-effect red">Enter Email</button>
+       </form>
+       <div id="email-response"></div>
+   </div>
+
+
+  <main class="container">
+    <h4>Questions</h4>
+    <p class="grey-text text-darken-1">
+      Please Direct all questions to our our email. 
+    </p>
+
+
+   
+
+    <!-- COLLAPSIBLE -->
+    <section id="collapsible" class="demo-section">
+      <h5> Commonly asked Questions</h5>
+      <p class="grey-text text-darken-1">
+        Here are some frequent questions about the sign up process.
+      </p>
+
+
+      <!-- Collapsible markup -->
+      <ul class="collapsible" id="demoCollapsible">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            What will I get notifications about?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              You'll receive updates about our club meetings, events, and any special announcements related to Miami University Force Sensitives.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+             <i class="material-icons">info</i>
+            Do I need to put my email in?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              No, you can reach out inother ways through the Miami HUB or through Discord.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            Do I have to make all the meetings?        
+          </div>
+          <div class="collapsible-body">
+            <p>
+              No, but we would love to see you there. Show up when you can and we'll gladly welcome you.
+            </p>
+          </div>
+        </li>
+      </ul>
+   
+    </section>
    </script>
 </body>
 </html>
