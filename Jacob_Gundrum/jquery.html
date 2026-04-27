@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get to Know You</title>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    .text-box {
+      font-size: 24px;
+      margin: 20px;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 8px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    /* Push dark mode button to bottom */
+    #darkModeBtn {
+      display: block;
+      margin: 50px auto 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Getting to Know You</h1>
+
+  <!-- Text Toggle -->
+  <button id="toggleTextBtn">Wanna hear a joke?</button>
+
+  <div class="text-box">What did Obi-Wan Kenobi say to Luke Skywalker at dinner? Use the Fork!</div>
+
+  <!-- Form Interaction -->
+  <h2>What's Your Name?</h2>
+  <form id="myForm">
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="output"></p>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeBtn">Dark Mode</button>
+
+  <script>
+    $(document).ready(function(){
+
+      // Dark Mode Toggle
+      $("#darkModeBtn").click(function(){
+        $("body").toggleClass("dark-mode");
+      });
+
+      // Hide/Show Text
+      $("#toggleTextBtn").click(function(){
+        $(".text-box").fadeToggle();
+      });
+
+      // Form Interaction
+      $("#myForm").submit(function(event){
+        event.preventDefault();
+
+        let name = $("#nameInput").val();
+
+        if(name === ""){
+          $("#output").text("Please enter your name!");
+        } else {
+          $("#output").text("Hello, " + name + "!");
+        }
+      });
+
+      // Live typing feedback
+      $("#nameInput").on("keyup", function(){
+        $("#output").text("Typing: " + $(this).val());
+      });
+
+    });
+  </script>
+
+</body>
+</html>

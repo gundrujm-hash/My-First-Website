@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Materialize CSS Example</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <style>
+       body {
+           background-color: #f0f4f7;
+           font-family: Arial, sans-serif;
+       }
+       .container {
+           margin-top: 20px;
+       }
+       h4 {
+           color: #BD0820;
+       }
+       .card .card-image img {
+           height: 200px;
+           object-fit: cover;
+       }
+   </style>
+</head>
+<nav>
+    <div class="nav-wrapper red">
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="learnmore.html">Learn More</a></li>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="materialize.html">Materialize</a></li>
+            <li><a href="jquery.html">jQuery</a></li>
+        </ul>
+    </div>
+</nav>
+<body>
+
+
+   <!-- Text and Background -->
+   <div class="container">
+       <h4 class="center-align">Welcome to Miami University Force Sensitives </h4>
+       <p class="flow-text">Miami's on campus Star Wars appreciation student Organization</p>
+   </div>
+
+
+   <!-- Buttons -->
+   <div class="container">
+       <h4>Important Links</h4>
+      <a href="https://miamioh.campuslabs.com/engage/organization/mufs" class="waves-effect waves-light btn red">The HUB</a>
+       <a href="https://starwars.fandom.com/wiki/The_Star_Wars_story_synopsis" class="waves-effect waves-light btn-large red">Star Wars Synopsis</a>
+   </div>
+
+
+   <!-- Cards -->
+   <div class="container">
+       <h4>Our Logo</h4>
+       <div class="card">
+           <div class="card-image">
+               <img src="images/MUFS_Logo.png" alt="MUFS_Logo">
+               <span class="card-title">Mufs Logo</span>
+           </div>
+           <div class="card-content">
+               <p>The official Miami University Force Sensitives Logo</p>
+           </div>
+
+       </div>
+   </div>
+
+
+   <!-- Tables -->
+   <div class="container">
+       <h4>Executive Team</h4>
+       <table class="striped">
+           <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Position</th>
+                   <th>Year</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>River</td>
+                   <td>President</td>
+                   <td>Freshman</td>
+               </tr>
+               <tr>
+                   <td>Jacob</td>
+                   <td>Vice-President</td>
+                   <td>Freshman</td>
+               </tr>
+               <tr>
+                   <td>Sage</td>
+                   <td>Treasurer</td>
+                   <td>Freshman</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
+
+
+   <!-- Shading -->
+   <div class="container">
+       <h4>Meeting Times</h4>
+       <div class="card-panel red lighten-2">
+           <span class="white-text">We meet on Mondays at 7:00 PM, check us out.</span>
+       </div>
+   </div>
+
+
+   <!-- Images -->
+   <div class="container">
+       <h4>Images</h4>
+       <div class="row">
+           <div class="col s12 m6">
+               <img src="images/MUFS words.png" alt="Mufs Words" class="responsive-img materialboxed">
+           </div>
+           <div class="col s12 m6">
+               <img src="images/MUFS_Logo_Bird_Black.png" alt="Mufs Logo Bird Black" class="responsive-img materialboxed">
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.materialboxed');
+           var instances = M.Materialbox.init(elems);
+       });
+   </script>
+    <!-- Materialize CSS (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
+  <!-- Material Icons (optional, for icons in collapsible headers) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- Omit -->
+
+  <style>
+    body { padding-bottom: 48px; }
+    header { margin-bottom: 24px; }
+    .demo-section { margin-top: 32px; }
+    .controls .btn { margin-right: 8px; margin-bottom: 8px; }
+    .carousel { margin-top: 12px; }
+
+
+    /* Optional: make collapsible content a bit easier to read for students */
+    .collapsible-body p { margin-top: 0; }
+  </style>
+</head>
+
+
+<body>
+  <!-- Simple top nav -->
+  <header>
+    <nav class="red">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">How to Join</a>
+      </div>
+    </nav>
+  </header>
+<div id="radio-section" class="section container">
+       <h2>Select Your Favorite Star Wars Group</h2>
+       <form>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Jedi" onclick="displayGroup()"/>
+                   <span>Jedi</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Sith" onclick="displayGroup()"/>
+                   <span>Sith</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Jedi" onclick="displayGroup()"/>
+                   <span>Republic</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Sepratists" onclick="displayGroup()"/>
+                   <span>Sepratists</span>
+               </label>
+           </p>
+           <p>
+               <label>
+                   <input name="Group" type="radio" value="Bounty Hunters" onclick="displayGroup()"/>
+                   <span>Bounty Hunters</span>
+               </label>
+           </p>
+       </form>
+       <div id="group-response"></div>
+   </div>
+ <!-- Email Feedback Section -->
+   <div id="feedback-section" class="section container">
+       <h2>Subscribe for Updates</h2>
+       <form onsubmit="submitEmail(event)">
+           <div class="input-field">
+               <input id="email" type="email" required>
+               <label for="email">Email</label>
+           </div>
+           <button type="submit" class="btn waves-effect red">Enter Email</button>
+       </form>
+       <div id="email-response"></div>
+   </div>
+
+
+  <main class="container">
+    <h4>Questions</h4>
+    <p class="grey-text text-darken-1">
+      Please Direct all questions to our our email. 
+    </p>
+
+
+   
+
+    <!-- COLLAPSIBLE -->
+    <section id="collapsible" class="demo-section">
+      <h5> Commonly asked Questions</h5>
+      <p class="grey-text text-darken-1">
+        Here are some frequent questions about the sign up process.
+      </p>
+
+
+      <!-- Collapsible markup -->
+      <ul class="collapsible" id="demoCollapsible">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            What will I get notifications about?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              You'll receive updates about our club meetings, events, and any special announcements related to Miami University Force Sensitives.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+             <i class="material-icons">info</i>
+            Do I need to put my email in?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              No, you can reach out inother ways through the Miami HUB or through Discord.
+            </p>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">info</i>
+            Do I have to make all the meetings?        
+          </div>
+          <div class="collapsible-body">
+            <p>
+              No, but we would love to see you there. Show up when you can and we'll gladly welcome you.
+            </p>
+          </div>
+        </li>
+      </ul>
+   
+    </section>
+
+
+    
+</body>
+</html>
